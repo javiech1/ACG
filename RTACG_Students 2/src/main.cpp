@@ -21,6 +21,8 @@
 
 #include "materials/phong.h"
 
+#include <cstring>
+
 
 
 
@@ -197,7 +199,7 @@ int main()
     Shader *shader = new IntersectionShader (intersectionColor, bgColor);
     Shader *depthShader = new DepthShader(depthColor, maxDist, bgColor);
     Shader *normalShader = new NormalShader(bgColor);
-    Shader *directShader = new DirectShader(bgColor);
+    Shader *directShader = new DirectShader();
 
     // Build the scene---------------------------------------------------------
     // 

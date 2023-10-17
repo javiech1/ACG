@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.cpp
+matrix4x4.h
+/workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
+cstring
+-
+
+/workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
+iostream
+-
+string
+-
+sstream
+-
+vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ray.h
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+cmath
+-
+
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+string
+-
+sstream
+-
+vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+cmath
+-
+
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ostream
+-
+cmath
+-
+

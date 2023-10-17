@@ -1,4 +1,5 @@
 #include "matrix4x4.h"
+#include <cstring>
 
 Matrix4x4::Matrix4x4()
 {

@@ -2,6 +2,7 @@
 #define BITMAP_H
 
 #include "vector3d.h"
+#include <cstring>
 //#include <iostream>
 
 /**
