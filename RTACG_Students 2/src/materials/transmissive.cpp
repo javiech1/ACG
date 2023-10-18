@@ -1,7 +1,7 @@
 #include "transmissive.h"
 #include <iostream>
 
-Transmissive::Transmissive() : mu(float(1.1)) {}
+Transmissive::Transmissive() : mu(float(1.1)), IsReflective(bool(false)) {}
 
 Transmissive::Transmissive(const float mu_) : mu(mu_) {}
 
@@ -11,7 +11,7 @@ Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3
     double cosThetaI = dot(n, wo);
     // if true the ray is from inside
     bool isInside = cosThetaI < 0;
-    // Correct normal
+    // Correct normal, if ray is from inside then normal is reversed
     Vector3D correctedNormal = isInside ? -n : n;
     // idx of refr ratio
     double mu_t = isInside ? this->mu : 1 / this->mu;
@@ -28,6 +28,7 @@ Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3
     Vector3D wt2 = -wo * wt1;
     Vector3D w3 = wt2 + (correctedNormal * wt1);
     Vector3D wt = w3 * mu_t;
+    std::cout << "wt: " << wt << std::endl;
     return wt;
 }
 
