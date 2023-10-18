@@ -1,7 +1,7 @@
 #include "transmissive.h"
 #include <iostream>
 
-Transmissive::Transmissive() : mu(float(1.1)), IsReflective(bool(false)) {}
+Transmissive::Transmissive() : mu(float(1.1)) {}
 
 Transmissive::Transmissive(const float mu_) : mu(mu_) {}
 

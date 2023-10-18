@@ -6,7 +6,7 @@ class Transmissive : public Material
 {
 public:
     Transmissive();
-    Transmissive(const float mu, bool IsReflective = false);
+    Transmissive(const float mu);
     Vector3D getReflectance(const Vector3D &n, const Vector3D &wo,
                             const Vector3D &wi) const { return Vector3D(0, 0, 0); };
     Vector3D getTransmissionDirection(const Vector3D &n, const Vector3D &wo) const;
@@ -17,7 +17,6 @@ public:
 
 private:
     float mu;
-    bool IsReflective;
 };
 
 #endif // MIRROR_H
