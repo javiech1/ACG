@@ -23,6 +23,7 @@ set(SOURCES ./src/main.cpp
 ./src/materials/material.cpp
 ./src/materials/phong.cpp
 ./src/materials/mirror.cpp
+./src/materials/transmissive.cpp
 ./src/shaders/intersectionshader.cpp
 ./src/shaders/shader.cpp
 ./src/shaders/directshader.cpp

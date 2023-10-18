@@ -965,6 +965,33 @@ src/materials/material.cpp.s:
 	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.s
 .PHONY : src/materials/material.cpp.s
 
+src/materials/mirror.o: src/materials/mirror.cpp.o
+
+.PHONY : src/materials/mirror.o
+
+# target to build an object file
+src/materials/mirror.cpp.o:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o
+.PHONY : src/materials/mirror.cpp.o
+
+src/materials/mirror.i: src/materials/mirror.cpp.i
+
+.PHONY : src/materials/mirror.i
+
+# target to preprocess a source file
+src/materials/mirror.cpp.i:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.i
+.PHONY : src/materials/mirror.cpp.i
+
+src/materials/mirror.s: src/materials/mirror.cpp.s
+
+.PHONY : src/materials/mirror.s
+
+# target to generate assembly for a file
+src/materials/mirror.cpp.s:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.s
+.PHONY : src/materials/mirror.cpp.s
+
 src/materials/phong.o: src/materials/phong.cpp.o
 
 .PHONY : src/materials/phong.o
@@ -991,6 +1018,33 @@ src/materials/phong.s: src/materials/phong.cpp.s
 src/materials/phong.cpp.s:
 	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.s
 .PHONY : src/materials/phong.cpp.s
+
+src/materials/transmissive.o: src/materials/transmissive.cpp.o
+
+.PHONY : src/materials/transmissive.o
+
+# target to build an object file
+src/materials/transmissive.cpp.o:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o
+.PHONY : src/materials/transmissive.cpp.o
+
+src/materials/transmissive.i: src/materials/transmissive.cpp.i
+
+.PHONY : src/materials/transmissive.i
+
+# target to preprocess a source file
+src/materials/transmissive.cpp.i:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.i
+.PHONY : src/materials/transmissive.cpp.i
+
+src/materials/transmissive.s: src/materials/transmissive.cpp.s
+
+.PHONY : src/materials/transmissive.s
+
+# target to generate assembly for a file
+src/materials/transmissive.cpp.s:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.s
+.PHONY : src/materials/transmissive.cpp.s
 
 src/shaders/depthshader.o: src/shaders/depthshader.cpp.o
 
@@ -1297,9 +1351,15 @@ help:
 	@echo "... src/materials/material.o"
 	@echo "... src/materials/material.i"
 	@echo "... src/materials/material.s"
+	@echo "... src/materials/mirror.o"
+	@echo "... src/materials/mirror.i"
+	@echo "... src/materials/mirror.s"
 	@echo "... src/materials/phong.o"
 	@echo "... src/materials/phong.i"
 	@echo "... src/materials/phong.s"
+	@echo "... src/materials/transmissive.o"
+	@echo "... src/materials/transmissive.i"
+	@echo "... src/materials/transmissive.s"
 	@echo "... src/shaders/depthshader.o"
 	@echo "... src/shaders/depthshader.i"
 	@echo "... src/shaders/depthshader.s"

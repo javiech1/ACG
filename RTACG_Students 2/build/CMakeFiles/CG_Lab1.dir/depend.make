@@ -94,7 +94,9 @@ CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/core/vector3d.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/lightsources/pointlightsource.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/material.h
+CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/mirror.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/phong.h
+CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/transmissive.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/depthshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/directshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/intersectionshader.h
@@ -108,10 +110,20 @@ CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o: ../src/core/vector3d.h
 CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o: ../src/materials/material.cpp
 CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o: ../src/materials/material.h
 
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: ../src/core/vector3d.h
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: ../src/materials/material.h
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: ../src/materials/mirror.cpp
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: ../src/materials/mirror.h
+
 CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o: ../src/core/vector3d.h
 CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o: ../src/materials/material.h
 CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o: ../src/materials/phong.cpp
 CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o: ../src/materials/phong.h
+
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: ../src/core/vector3d.h
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: ../src/materials/material.h
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: ../src/materials/transmissive.cpp
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: ../src/materials/transmissive.h
 
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o: ../src/core/intersection.h
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o: ../src/core/matrix4x4.h

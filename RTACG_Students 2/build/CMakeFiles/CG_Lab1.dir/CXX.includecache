@@ -66,6 +66,10 @@ vector3d.h
 cmath
 -
 
+/workspaces/ACG/RTACG_Students 2/src/core/utils.cpp
+utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+
 /workspaces/ACG/RTACG_Students 2/src/core/utils.h
 cmath
 -
@@ -121,30 +125,94 @@ shaders/directshader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
 materials/phong.h
 /workspaces/ACG/RTACG_Students 2/src/materials/phong.h
+materials/mirror.h
+/workspaces/ACG/RTACG_Students 2/src/materials/mirror.h
+materials/transmissive.h
+/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
 cstring
+-
+
+/workspaces/ACG/RTACG_Students 2/src/materials/material.cpp
+material.h
+/workspaces/ACG/RTACG_Students 2/src/materials/material.h
+iostream
 -
 
 /workspaces/ACG/RTACG_Students 2/src/materials/material.h
 ../core/vector3d.h
 /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
 
+/workspaces/ACG/RTACG_Students 2/src/materials/mirror.cpp
+mirror.h
+/workspaces/ACG/RTACG_Students 2/src/materials/mirror.h
+iostream
+-
+
+/workspaces/ACG/RTACG_Students 2/src/materials/mirror.h
+material.h
+/workspaces/ACG/RTACG_Students 2/src/materials/material.h
+
+/workspaces/ACG/RTACG_Students 2/src/materials/phong.cpp
+phong.h
+/workspaces/ACG/RTACG_Students 2/src/materials/phong.h
+iostream
+-
+
 /workspaces/ACG/RTACG_Students 2/src/materials/phong.h
 material.h
 /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+
+/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp
+transmissive.h
+/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
+iostream
+-
+
+/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
+material.h
+/workspaces/ACG/RTACG_Students 2/src/materials/material.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.cpp
+depthshader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.h
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
 
 /workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.h
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
 
+/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.cpp
+directshader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+
 /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.cpp
+intersectionshader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.h
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
 
 /workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.h
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
 
+/workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.cpp
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+normalshader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.h
+shader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/shader.cpp
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
 
@@ -160,7 +228,15 @@ vector
 ../lightsources/pointlightsource.h
 /workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
 
+/workspaces/ACG/RTACG_Students 2/src/shapes/infiniteplan.cpp
+infiniteplan.h
 /workspaces/ACG/RTACG_Students 2/src/shapes/infiniteplan.h
+
+/workspaces/ACG/RTACG_Students 2/src/shapes/infiniteplan.h
+shape.h
+/workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
+
+/workspaces/ACG/RTACG_Students 2/src/shapes/shape.cpp
 shape.h
 /workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
 
@@ -175,6 +251,10 @@ shape.h
 /workspaces/ACG/RTACG_Students 2/src/materials/material.h
 ../core/intersection.h
 /workspaces/ACG/RTACG_Students 2/src/core/intersection.h
+
+/workspaces/ACG/RTACG_Students 2/src/shapes/sphere.cpp
+sphere.h
+/workspaces/ACG/RTACG_Students 2/src/shapes/sphere.h
 
 /workspaces/ACG/RTACG_Students 2/src/shapes/sphere.h
 iostream

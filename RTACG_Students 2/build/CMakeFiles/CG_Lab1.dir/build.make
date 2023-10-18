@@ -278,9 +278,35 @@ CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/workspaces/ACG/RTACG_Students 2/src/materials/phong.cpp" -o CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.s
 
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o: ../src/materials/mirror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/materials/mirror.cpp"
+
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/workspaces/ACG/RTACG_Students 2/src/materials/mirror.cpp" > CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.i
+
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/workspaces/ACG/RTACG_Students 2/src/materials/mirror.cpp" -o CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.s
+
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o: ../src/materials/transmissive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp"
+
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp" > CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.i
+
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp" -o CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.s
+
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o: ../src/shaders/intersectionshader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.i: cmake_force
@@ -293,7 +319,7 @@ CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o: ../src/shaders/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shaders/shader.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.i: cmake_force
@@ -306,7 +332,7 @@ CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: ../src/shaders/directshader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.i: cmake_force
@@ -319,7 +345,7 @@ CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o: ../src/shaders/depthshader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.i: cmake_force
@@ -332,7 +358,7 @@ CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o: ../src/shaders/normalshader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.i: cmake_force
@@ -345,7 +371,7 @@ CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.o: ../src/shapes/infiniteplan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shapes/infiniteplan.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.i: cmake_force
@@ -358,7 +384,7 @@ CMakeFiles/CG_Lab1.dir/src/shapes/infiniteplan.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o: ../src/shapes/shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shapes/shape.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.i: cmake_force
@@ -371,7 +397,7 @@ CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.s: cmake_force
 
 CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o: CMakeFiles/CG_Lab1.dir/flags.make
 CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o: ../src/shapes/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o -c "/workspaces/ACG/RTACG_Students 2/src/shapes/sphere.cpp"
 
 CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.i: cmake_force
@@ -401,6 +427,8 @@ CG_Lab1_OBJECTS = \
 "CMakeFiles/CG_Lab1.dir/src/lightsources/pointlightsource.cpp.o" \
 "CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o" \
 "CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o" \
+"CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o" \
+"CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o" \
 "CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o" \
 "CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o" \
 "CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o" \
@@ -430,6 +458,8 @@ CG_Lab1: CMakeFiles/CG_Lab1.dir/src/core/vector3d.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/lightsources/pointlightsource.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o
+CG_Lab1: CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o
+CG_Lab1: CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o
@@ -440,7 +470,7 @@ CG_Lab1: CMakeFiles/CG_Lab1.dir/src/shapes/shape.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/src/shapes/sphere.cpp.o
 CG_Lab1: CMakeFiles/CG_Lab1.dir/build.make
 CG_Lab1: CMakeFiles/CG_Lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable CG_Lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/workspaces/ACG/RTACG_Students 2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable CG_Lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CG_Lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

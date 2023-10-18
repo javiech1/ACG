@@ -95,7 +95,9 @@ CMakeFiles/CG_Lab1.dir/src/main.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
  /workspaces/ACG/RTACG_Students 2/src/main.cpp
  /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/mirror.h
  /workspaces/ACG/RTACG_Students 2/src/materials/phong.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.h
@@ -108,11 +110,21 @@ CMakeFiles/CG_Lab1.dir/src/materials/material.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
  /workspaces/ACG/RTACG_Students 2/src/materials/material.cpp
  /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+CMakeFiles/CG_Lab1.dir/src/materials/mirror.cpp.o
+ /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/mirror.cpp
+ /workspaces/ACG/RTACG_Students 2/src/materials/mirror.h
 CMakeFiles/CG_Lab1.dir/src/materials/phong.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
  /workspaces/ACG/RTACG_Students 2/src/materials/material.h
  /workspaces/ACG/RTACG_Students 2/src/materials/phong.cpp
  /workspaces/ACG/RTACG_Students 2/src/materials/phong.h
+CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o
+ /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp
+ /workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
 CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/core/intersection.h
  /workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
