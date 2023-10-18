@@ -22,6 +22,7 @@ set(SOURCES ./src/main.cpp
 ./src/lightsources/pointlightsource.cpp
 ./src/materials/material.cpp
 ./src/materials/phong.cpp
+./src/materials/mirror.cpp
 ./src/shaders/intersectionshader.cpp
 ./src/shaders/shader.cpp
 ./src/shaders/directshader.cpp

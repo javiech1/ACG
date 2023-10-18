@@ -1,19 +1,28 @@
 #include "directshader.h"
 #include "../core/utils.h"
 
-DirectShader::DirectShader() :
-    Shader(Vector3D(0.0))    
-{ }
-
-
-
-Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape*> &objList, const std::vector<PointLightSource> &lsList) const
+DirectShader::DirectShader() : Shader(Vector3D(0.0))
 {
-   
+}
+
+Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &objList, const std::vector<PointLightSource> &lsList) const
+{
+
     Intersection its;
-    if (Utils::getClosestIntersection(r, objList, its)) {
+    if (Utils::getClosestIntersection(r, objList, its))
+    {
         Vector3D final_color = Vector3D(0.0);
-        for (int i = 0; i < lsList.size(); i++) {
+        // TODO: if to see if material is mirror
+        if (its.shape->getMaterial().hasSpecular())
+        {
+            Vector3D wr = its.shape->getMaterial().getReflectance(its.normal, r.d, -r.d);
+            Ray reflectionRay = Ray(its.itsPoint, wr, int(r.depth) + 1);
+            final_color = computeColor(reflectionRay, objList, lsList);
+            return final_color;
+        }
+
+        for (int i = 0; i < lsList.size(); i++)
+        {
             Ray shadow_ray = Ray();
             Vector3D Wi = (lsList.at(i).getPosition() - its.itsPoint);
             shadow_ray.o = its.itsPoint;
@@ -26,8 +35,6 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape*> &obj
         }
         return final_color;
     }
-    else 
+    else
         return bgColor;
-   
-
 }
