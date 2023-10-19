@@ -24,7 +24,6 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &ob
         if (its.shape->getMaterial().hasTransmission())
         {
             Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
-            std::cout << "wt: " << wt << std::endl;
             Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
             final_color = computeColor(transmissionRay, objList, lsList);
             return final_color;

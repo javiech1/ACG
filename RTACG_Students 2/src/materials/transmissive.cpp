@@ -1,11 +1,11 @@
 #include "transmissive.h"
 #include <iostream>
 
-Transmissive::Transmissive() : mu(float(1.1)) {}
+Transmissive::Transmissive() : mu(float(1.1)), isReflected(false) {}
 
 Transmissive::Transmissive(const float mu_) : mu(mu_) {}
 
-Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3D &wo) const
+Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3D &wo)
 {
     // cos of normal and ray
     double cosThetaI = dot(n, wo);
@@ -19,8 +19,9 @@ Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3
     double discriminant = 1 - mu_t * mu_t * (1 - cosThetaI * cosThetaI);
 
     // Total refl, behaves like mirror
-    if (discriminant < 0)
+    if (discriminant < 0 || isReflected)
     {
+        this->isReflected = true;
         return this->getReflectionDirection(n, wo);
     }
     // compute Refracted ray
@@ -28,12 +29,13 @@ Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3
     Vector3D wt2 = -wo * wt1;
     Vector3D w3 = wt2 + (correctedNormal * wt1);
     Vector3D wt = w3 * mu_t;
-    std::cout << "wt: " << wt << std::endl;
+    // std::cout << "wt: " << wt << std::endl;
     return wt;
 }
 
 Vector3D Transmissive::getReflectionDirection(const Vector3D &n, const Vector3D &wo) const
 {
     Vector3D wr = n * 2 * dot(n, wo) - wo;
+    std::cout << "wr: " << wr << std::endl;
     return wr;
 }
