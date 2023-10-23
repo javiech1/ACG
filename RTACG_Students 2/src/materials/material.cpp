@@ -21,3 +21,8 @@ Vector3D Material::getTransmissionDirection(const Vector3D &n, const Vector3D &w
 {
     return -1;
 }
+
+bool Material::getIsReflected() const
+{
+    return false;
+}

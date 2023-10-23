@@ -14,6 +14,7 @@ public:
     bool hasSpecular() const { return false; };
     bool hasTransmission() const { return true; };
     bool hasDiffuseOrGlossy() const { return false; };
+    bool getIsReflected() const { return isReflected; };
 
 private:
     float mu;

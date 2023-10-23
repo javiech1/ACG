@@ -154,6 +154,12 @@ material.h
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
 
+/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.cpp
+directshader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+
 /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
 shader.h
 /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h

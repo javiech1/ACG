@@ -21,6 +21,8 @@ public:
     // end
 
     virtual double getIndexOfRefraction() const;
+
+    virtual bool getIsReflected() const;
 };
 
 #endif // MATERIAL

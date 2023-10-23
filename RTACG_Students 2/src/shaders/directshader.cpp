@@ -23,9 +23,19 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &ob
 
         if (its.shape->getMaterial().hasTransmission())
         {
-            Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
-            Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
-            final_color = computeColor(transmissionRay, objList, lsList);
+            if (!its.shape->getMaterial().getIsReflected())
+            {
+                Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
+                Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
+                final_color = computeColor(transmissionRay, objList, lsList);
+            }
+            else
+            {
+                Vector3D wt = its.shape->getMaterial().getReflectionDirection(its.normal, -r.d);
+                Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
+                final_color = computeColor(transmissionRay, objList, lsList);
+            }
+            std::cout << "state: " << its.shape->getMaterial().getIsReflected() << std::endl;
             return final_color;
         }
 

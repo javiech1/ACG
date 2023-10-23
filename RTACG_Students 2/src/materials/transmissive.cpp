@@ -7,6 +7,7 @@ Transmissive::Transmissive(const float mu_) : mu(mu_) {}
 
 Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3D &wo)
 {
+    //MOVE TO DIRECT SHADER
     // cos of normal and ray
     double cosThetaI = dot(n, wo);
     // if true the ray is from inside
@@ -19,9 +20,9 @@ Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3
     double discriminant = 1 - mu_t * mu_t * (1 - cosThetaI * cosThetaI);
 
     // Total refl, behaves like mirror
-    if (discriminant < 0 || isReflected)
+    if (discriminant < 0)
     {
-        this->isReflected = true;
+        isReflected = true;
         return this->getReflectionDirection(n, wo);
     }
     // compute Refracted ray
