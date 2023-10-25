@@ -29,6 +29,7 @@ set(SOURCES ./src/main.cpp
 ./src/shaders/directshader.cpp
 ./src/shaders/depthshader.cpp
 ./src/shaders/normalshader.cpp
+./src/shaders/globalshader.cpp
 ./src/shaders/intersectionshader.cpp
 ./src/shapes/infiniteplan.cpp
 ./src/shapes/shape.cpp

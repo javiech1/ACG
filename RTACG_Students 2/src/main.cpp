@@ -18,6 +18,7 @@
 #include "shaders/depthshader.h"
 #include "shaders/normalshader.h"
 #include "shaders/directshader.h"
+#include "shaders/globalshader.h"
 
 #include "materials/phong.h"
 #include "materials/mirror.h"
@@ -265,6 +266,7 @@ int main()
     Shader *depthShader = new DepthShader(depthColor, maxDist, bgColor);
     Shader *normalShader = new NormalShader(bgColor);
     Shader *directShader = new DirectShader();
+    Shader *globalShader = new GlobalShader();
 
     // Build the scene---------------------------------------------------------
     //
@@ -283,7 +285,7 @@ int main()
 
     // Launch some rays! TASK 2,3,...
     //
-    raytrace(cam, directShader, film, objectsList, lightSourceList);
+    raytrace(cam, globalShader, film, objectsList, lightSourceList);
 
     // Save the final result to file
     std::cout << "\n\nSaving the result to file output.bmp\n"

@@ -2,10 +2,10 @@
 #define GLOBALSHADER_H
 #include "shader.h"
 
-class DirectShader : public Shader
+class GlobalShader : public Shader
 {
 public:
-    DirectShader();
+    GlobalShader();
 
     virtual Vector3D computeColor(const Ray &r,
                                   const std::vector<Shape *> &objList,

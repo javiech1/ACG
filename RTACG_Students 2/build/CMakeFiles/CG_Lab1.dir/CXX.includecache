@@ -6,19 +6,97 @@
 
 #IncludeRegexTransform: 
 
+/workspaces/ACG/RTACG_Students 2/src/core/hemisphericalsampler.h
+../core/vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+
+/workspaces/ACG/RTACG_Students 2/src/core/intersection.h
+vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+
+/workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
+iostream
+-
+string
+-
+sstream
+-
+vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ray.h
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+cmath
+-
+
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+string
+-
+sstream
+-
+vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+cmath
+-
+
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+cmath
+-
+vector
+-
+ray.h
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+../shapes/shape.h
+/workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
+
 /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
 ostream
 -
 cmath
 -
 
-/workspaces/ACG/RTACG_Students 2/src/materials/material.cpp
-material.h
-/workspaces/ACG/RTACG_Students 2/src/materials/material.h
-iostream
--
+/workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
+../core/vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
 
 /workspaces/ACG/RTACG_Students 2/src/materials/material.h
 ../core/vector3d.h
 /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.cpp
+globalshader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.h
+../core/utils.h
+/workspaces/ACG/RTACG_Students 2/src/core/utils.h
+../core/hemisphericalsampler.h
+/workspaces/ACG/RTACG_Students 2/src/core/hemisphericalsampler.h
+cmath
+-
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.h
+shader.h
+/workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
+
+/workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
+vector
+-
+../core/ray.h
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+../lightsources/pointlightsource.h
+/workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
+../shapes/shape.h
+/workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
+../lightsources/pointlightsource.h
+/workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
+
+/workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
+../core/matrix4x4.h
+/workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
+../core/vector3d.h
+/workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+../core/ray.h
+/workspaces/ACG/RTACG_Students 2/src/core/ray.h
+../materials/material.h
+/workspaces/ACG/RTACG_Students 2/src/materials/material.h
+../core/intersection.h
+/workspaces/ACG/RTACG_Students 2/src/core/intersection.h
 

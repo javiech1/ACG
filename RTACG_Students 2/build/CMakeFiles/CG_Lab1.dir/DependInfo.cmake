@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/workspaces/ACG/RTACG_Students 2/src/materials/transmissive.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o"
   "/workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o"
   "/workspaces/ACG/RTACG_Students 2/src/shaders/directshader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o"
+  "/workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o"
   "/workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o"
   "/workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o"
   "/workspaces/ACG/RTACG_Students 2/src/shaders/shader.cpp" "/workspaces/ACG/RTACG_Students 2/build/CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o"

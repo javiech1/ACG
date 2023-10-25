@@ -1100,6 +1100,33 @@ src/shaders/directshader.cpp.s:
 	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.s
 .PHONY : src/shaders/directshader.cpp.s
 
+src/shaders/globalshader.o: src/shaders/globalshader.cpp.o
+
+.PHONY : src/shaders/globalshader.o
+
+# target to build an object file
+src/shaders/globalshader.cpp.o:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o
+.PHONY : src/shaders/globalshader.cpp.o
+
+src/shaders/globalshader.i: src/shaders/globalshader.cpp.i
+
+.PHONY : src/shaders/globalshader.i
+
+# target to preprocess a source file
+src/shaders/globalshader.cpp.i:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.i
+.PHONY : src/shaders/globalshader.cpp.i
+
+src/shaders/globalshader.s: src/shaders/globalshader.cpp.s
+
+.PHONY : src/shaders/globalshader.s
+
+# target to generate assembly for a file
+src/shaders/globalshader.cpp.s:
+	$(MAKE) -f CMakeFiles/CG_Lab1.dir/build.make CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.s
+.PHONY : src/shaders/globalshader.cpp.s
+
 src/shaders/intersectionshader.o: src/shaders/intersectionshader.cpp.o
 
 .PHONY : src/shaders/intersectionshader.o
@@ -1366,6 +1393,9 @@ help:
 	@echo "... src/shaders/directshader.o"
 	@echo "... src/shaders/directshader.i"
 	@echo "... src/shaders/directshader.s"
+	@echo "... src/shaders/globalshader.o"
+	@echo "... src/shaders/globalshader.i"
+	@echo "... src/shaders/globalshader.s"
 	@echo "... src/shaders/intersectionshader.o"
 	@echo "... src/shaders/intersectionshader.i"
 	@echo "... src/shaders/intersectionshader.s"

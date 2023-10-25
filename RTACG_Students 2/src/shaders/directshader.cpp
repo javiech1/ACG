@@ -18,7 +18,7 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &ob
             Vector3D wr = its.shape->getMaterial().getReflectionDirection(its.normal, -r.d);
             Ray reflectionRay = Ray(its.itsPoint, wr, int(r.depth) + 1);
             final_color = computeColor(reflectionRay, objList, lsList);
-            return final_color;
+            // return final_color;
         }
 
         if (its.shape->getMaterial().hasTransmission())
@@ -29,19 +29,18 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &ob
             if (discriminant < 0)
             {
                 Vector3D wr = its.shape->getMaterial().getReflectionDirection(its.normal, -r.d);
-                std::cout << "wr: " << wr << std::endl;
+                // std::cout << "wr: " << wr << std::endl;
                 Ray reflectionRay = Ray(its.itsPoint, wr, int(r.depth) + 1);
-                final_color += computeColor(reflectionRay, objList, lsList);
-                std::cout << "final_color_ref: " << final_color << std::endl;
+                final_color = computeColor(reflectionRay, objList, lsList);
             }
             else
             {
                 Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
-                std::cout << "wt: " << wt << std::endl;
-                std::cout << "mu: " << its.shape->getMaterial().getMu() << std::endl;
+                // std::cout << "wt: " << wt << std::endl;
+                // std::cout << "mu: " << its.shape->getMaterial().getMu() << std::endl;
                 Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
-                final_color += computeColor(transmissionRay, objList, lsList);
-                std::cout << "final_color_trans: " << final_color << std::endl;
+                final_color = computeColor(transmissionRay, objList, lsList);
+                // std::cout << "final_color_trans: " << final_color << std::endl;
             }
             return final_color;
         }

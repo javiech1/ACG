@@ -99,6 +99,7 @@ CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/phong.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/materials/transmissive.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/depthshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/directshader.h
+CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/globalshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/intersectionshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/normalshader.h
 CMakeFiles/CG_Lab1.dir/src/main.cpp.o: ../src/shaders/shader.h
@@ -148,6 +149,19 @@ CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: ../src/shaders/directshad
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: ../src/shaders/directshader.h
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: ../src/shaders/shader.h
 CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o: ../src/shapes/shape.h
+
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/hemisphericalsampler.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/intersection.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/matrix4x4.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/ray.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/utils.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/core/vector3d.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/lightsources/pointlightsource.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/materials/material.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/shaders/globalshader.cpp
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/shaders/globalshader.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/shaders/shader.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o: ../src/shapes/shape.h
 
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o: ../src/core/intersection.h
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o: ../src/core/matrix4x4.h

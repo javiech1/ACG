@@ -100,6 +100,7 @@ CMakeFiles/CG_Lab1.dir/src/main.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/materials/transmissive.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/depthshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
+ /workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/intersectionshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/normalshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
@@ -147,6 +148,19 @@ CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o
  /workspaces/ACG/RTACG_Students 2/src/materials/material.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.cpp
  /workspaces/ACG/RTACG_Students 2/src/shaders/directshader.h
+ /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
+ /workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
+CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o
+ /workspaces/ACG/RTACG_Students 2/src/core/hemisphericalsampler.h
+ /workspaces/ACG/RTACG_Students 2/src/core/intersection.h
+ /workspaces/ACG/RTACG_Students 2/src/core/matrix4x4.h
+ /workspaces/ACG/RTACG_Students 2/src/core/ray.h
+ /workspaces/ACG/RTACG_Students 2/src/core/utils.h
+ /workspaces/ACG/RTACG_Students 2/src/core/vector3d.h
+ /workspaces/ACG/RTACG_Students 2/src/lightsources/pointlightsource.h
+ /workspaces/ACG/RTACG_Students 2/src/materials/material.h
+ /workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.cpp
+ /workspaces/ACG/RTACG_Students 2/src/shaders/globalshader.h
  /workspaces/ACG/RTACG_Students 2/src/shaders/shader.h
  /workspaces/ACG/RTACG_Students 2/src/shapes/shape.h
 CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o

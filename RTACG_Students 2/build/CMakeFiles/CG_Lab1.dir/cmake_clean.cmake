@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CG_Lab1.dir/src/materials/transmissive.cpp.o"
   "CMakeFiles/CG_Lab1.dir/src/shaders/depthshader.cpp.o"
   "CMakeFiles/CG_Lab1.dir/src/shaders/directshader.cpp.o"
+  "CMakeFiles/CG_Lab1.dir/src/shaders/globalshader.cpp.o"
   "CMakeFiles/CG_Lab1.dir/src/shaders/intersectionshader.cpp.o"
   "CMakeFiles/CG_Lab1.dir/src/shaders/normalshader.cpp.o"
   "CMakeFiles/CG_Lab1.dir/src/shaders/shader.cpp.o"
