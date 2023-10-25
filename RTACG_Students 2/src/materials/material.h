@@ -22,7 +22,8 @@ public:
 
     virtual double getIndexOfRefraction() const;
 
-    virtual bool getIsReflected() const;
+    virtual float getMu() const;
+    virtual Vector3D getDiffuseCoefficient() const;
 };
 
 #endif // MATERIAL

@@ -23,19 +23,26 @@ Vector3D DirectShader::computeColor(const Ray &r, const std::vector<Shape *> &ob
 
         if (its.shape->getMaterial().hasTransmission())
         {
-            if (!its.shape->getMaterial().getIsReflected())
+            Vector3D w0 = -r.d;
+            double cosThetaI = -dot(its.normal, w0);
+            double discriminant = 1 - (its.shape->getMaterial().getMu() * its.shape->getMaterial().getMu()) * (1 - cosThetaI * cosThetaI);
+            if (discriminant < 0)
             {
-                Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
-                Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
-                final_color = computeColor(transmissionRay, objList, lsList);
+                Vector3D wr = its.shape->getMaterial().getReflectionDirection(its.normal, -r.d);
+                std::cout << "wr: " << wr << std::endl;
+                Ray reflectionRay = Ray(its.itsPoint, wr, int(r.depth) + 1);
+                final_color += computeColor(reflectionRay, objList, lsList);
+                std::cout << "final_color_ref: " << final_color << std::endl;
             }
             else
             {
-                Vector3D wt = its.shape->getMaterial().getReflectionDirection(its.normal, -r.d);
+                Vector3D wt = its.shape->getMaterial().getTransmissionDirection(its.normal, -r.d);
+                std::cout << "wt: " << wt << std::endl;
+                std::cout << "mu: " << its.shape->getMaterial().getMu() << std::endl;
                 Ray transmissionRay = Ray(its.itsPoint, wt, int(r.depth) + 1);
-                final_color = computeColor(transmissionRay, objList, lsList);
+                final_color += computeColor(transmissionRay, objList, lsList);
+                std::cout << "final_color_trans: " << final_color << std::endl;
             }
-            std::cout << "state: " << its.shape->getMaterial().getIsReflected() << std::endl;
             return final_color;
         }
 

@@ -22,7 +22,13 @@ Vector3D Material::getTransmissionDirection(const Vector3D &n, const Vector3D &w
     return -1;
 }
 
-bool Material::getIsReflected() const
+float Material::getMu() const
 {
-    return false;
+    return -1;
+}
+Vector3D Material::getDiffuseCoefficient() const
+{
+    std::cout << "Warning! Calling \"Material::getDiffuseCoefficient()\" for a non-diffuse material"
+              << std::endl;
+    return Vector3D(-1, -1, -1);
 }

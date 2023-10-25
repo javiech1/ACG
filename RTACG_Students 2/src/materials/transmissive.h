@@ -6,19 +6,19 @@ class Transmissive : public Material
 {
 public:
     Transmissive();
-    Transmissive(const float mu_);
+    Transmissive(float mu);
     Vector3D getReflectance(const Vector3D &n, const Vector3D &wo,
                             const Vector3D &wi) const { return Vector3D(0, 0, 0); };
-    Vector3D getTransmissionDirection(const Vector3D &n, const Vector3D &wo);
+    Vector3D getTransmissionDirection(const Vector3D &n, const Vector3D &wo) const;
     Vector3D getReflectionDirection(const Vector3D &n, const Vector3D &wo) const;
+
     bool hasSpecular() const { return false; };
     bool hasTransmission() const { return true; };
     bool hasDiffuseOrGlossy() const { return false; };
-    bool getIsReflected() const { return isReflected; };
+    float getMu() const;
 
 private:
     float mu;
-    bool isReflected;
 };
 
 #endif // MIRROR_H

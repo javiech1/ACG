@@ -1,42 +1,31 @@
 #include "transmissive.h"
 #include <iostream>
+#include <cmath>
 
-Transmissive::Transmissive() : mu(float(1.1)), isReflected(false) {}
+Transmissive::Transmissive() : mu(float(1.1)) {}
 
-Transmissive::Transmissive(const float mu_) : mu(mu_) {}
+Transmissive::Transmissive(float mu_) : mu(mu_) {}
 
-Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3D &wo)
+Vector3D Transmissive::getTransmissionDirection(const Vector3D &n, const Vector3D &wo) const
 {
-    //MOVE TO DIRECT SHADER
-    // cos of normal and ray
-    double cosThetaI = dot(n, wo);
-    // if true the ray is from inside
-    bool isInside = cosThetaI < 0;
-    // Correct normal, if ray is from inside then normal is reversed
-    Vector3D correctedNormal = isInside ? -n : n;
-    // idx of refr ratio
-    double mu_t = isInside ? this->mu : 1 / this->mu;
-    // Discriminant to check internal refl
-    double discriminant = 1 - mu_t * mu_t * (1 - cosThetaI * cosThetaI);
+    // compute Refractreted ray
+    double cosThetaI = -dot(n, wo);
+    double muT = mu;
+    Vector3D v1 = n * sqrt(1 - muT * muT * (1 - cosThetaI * cosThetaI));
+    Vector3D v2 = (wo - n * cosThetaI);
+    Vector3D v3 = v2.operator*(muT);
+    Vector3D wt = v3 - v1;
 
-    // Total refl, behaves like mirror
-    if (discriminant < 0)
-    {
-        isReflected = true;
-        return this->getReflectionDirection(n, wo);
-    }
-    // compute Refracted ray
-    double wt1 = (mu_t * cosThetaI - sqrt(discriminant));
-    Vector3D wt2 = -wo * wt1;
-    Vector3D w3 = wt2 + (correctedNormal * wt1);
-    Vector3D wt = w3 * mu_t;
-    // std::cout << "wt: " << wt << std::endl;
     return wt;
 }
 
 Vector3D Transmissive::getReflectionDirection(const Vector3D &n, const Vector3D &wo) const
 {
     Vector3D wr = n * 2 * dot(n, wo) - wo;
-    std::cout << "wr: " << wr << std::endl;
     return wr;
+}
+
+float Transmissive::getMu() const
+{
+    return mu;
 }

@@ -14,6 +14,7 @@ public:
     bool hasSpecular() const { return false; };
     bool hasTransmission() const { return false; };
     bool hasDiffuseOrGlossy() const { return true; };
+    Vector3D getDiffuseCoefficient() const { return kd; };
 
 private:
     Vector3D kd;

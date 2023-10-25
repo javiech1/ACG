@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Site BuildName="Linux-c++"
-	BuildStamp="20231019-0727-Experimental"
+<Site BuildName="Linux-g++"
+	BuildStamp="20231023-1740-Experimental"
 	Name="codespaces-869463"
 	Generator="ctest-3.16.3"
-	CompilerName="/usr/bin/c++"
+	CompilerName="/usr/bin/g++"
 	CompilerVersion="9.4.0"
 	OSName="Linux"
 	Hostname="codespaces-869463"
@@ -16,19 +16,19 @@
 	FamilyID="25"
 	ModelID="1"
 	ProcessorCacheSize="512"
-	NumberOfLogicalCPU="4"
-	NumberOfPhysicalCPU="2"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="1"
 	TotalVirtualMemory="0"
-	TotalPhysicalMemory="15981"
+	TotalPhysicalMemory="7929"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="3242.85"
+	ProcessorClockFrequency="3242.01"
 	>
 	<Testing>
-		<StartDateTime>Oct 19 07:27 UTC</StartDateTime>
-		<StartTestTime>1697700460</StartTestTime>
+		<StartDateTime>Oct 23 17:40 UTC</StartDateTime>
+		<StartTestTime>1698082816</StartTestTime>
 		<TestList/>
-		<EndDateTime>Oct 19 07:27 UTC</EndDateTime>
-		<EndTestTime>1697700460</EndTestTime>
+		<EndDateTime>Oct 23 17:40 UTC</EndDateTime>
+		<EndTestTime>1698082816</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
